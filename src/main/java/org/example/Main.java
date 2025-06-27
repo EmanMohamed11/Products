@@ -16,8 +16,7 @@ public class Main {
         driver.findElement(By.cssSelector(".button-1.register-next-step-button")).click();
         String RegisterSuccess = driver.findElement(By.cssSelector(".result")).getText();
         System.out.println(RegisterSuccess);
-        System.out.println(RegisterSuccess);
-       // driver.findElement(By.linkText("Log out")).click();
+        driver.findElement(By.linkText("Log out")).click();
         driver.findElement(By.xpath("//input[@id='Email']")).sendKeys("EmanAliTest@test.com");
         driver.findElement(By.cssSelector("input[name='Password']")).sendKeys("Emtest123#");
     }
