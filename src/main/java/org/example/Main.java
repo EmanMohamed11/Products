@@ -18,7 +18,8 @@ public class Main {
 
     }
     public void addCucumberToCart(){
-        AddToCartForCucumberProduct= driver.findElement(By.xpath("//div/div/div[3]/h4/parent::div/div/button"));driver.findElement(By.xpath("//div/div/div[3]/h4/parent::div/div/button"));
+        AddToCartForCucumberProduct= driver.findElement(By.xpath("//div/div/div[3]/h4"));driver.findElement(By.xpath("//div/div/div[3]/h4/parent::div/div/button"));
+        System.out.println(AddToCartForCucumberProduct.getText());
         AddToCartForCucumberProduct.click();
     }
 
