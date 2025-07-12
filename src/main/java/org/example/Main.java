@@ -15,7 +15,7 @@ public class Main {
 
     protected static WebDriver driver;
     protected static WebDriverWait wait;
-    protected static String [] NeededProducts = {"Tomato","Musk","mango","rice"};
+    protected static String [] NeededProducts = {"Bro","Tomato","Mus","mango","rice","1/4 Kg",};
 
 
 
@@ -39,7 +39,7 @@ public class Main {
             boolean found = false;
 
             for (int i = 0; i < productsList.size(); i++) {
-                String productName = productsList.get(i).getText().split("-")[0].trim().toLowerCase();
+                String productName = productsList.get(i).getText().toLowerCase();
 
                 if (productName.contains(neededLower)) {
                     addToCartButtons.get(i).click();
@@ -122,6 +122,8 @@ public class Main {
         selectCountry();
         agreeToTermsConditions();
         completeOrder();
+
+
 
     }
 
